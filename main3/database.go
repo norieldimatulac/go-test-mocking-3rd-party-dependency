@@ -7,6 +7,6 @@ type Database interface {
 }
 
 func NewDatabase() Database {
-	r := &Mongo{}
+	r := &Redis{}
 	return r
 }
