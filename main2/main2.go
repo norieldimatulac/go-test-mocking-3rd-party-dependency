@@ -29,7 +29,7 @@ type Employee struct {
 func (e Employee) GetFullName(id string) (string, error) {
 
 	client := redis.NewClient(&redis.Options{
-		Addr:     "10.10.202.122:6379",
+		Addr:     "localhost:6379",
 		Password: "", // no password set
 		DB:       0,  // use default DB
 	})
